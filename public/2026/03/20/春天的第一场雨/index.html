@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 8.1.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yourname.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="🌧️ 未知房间：春雨中的神秘遭遇 “你遇到了一个神秘的事件…”  今天早上，推开窗的那一刻，我看到了一场春雨——这是我今年遇到的第一个随机事件。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="🌧️ 未知房间：春雨中的神秘遭遇">
+<meta property="og:url" content="https://yourname.github.io/2026/03/20/%E6%98%A5%E5%A4%A9%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%A8/index.html">
+<meta property="og:site_name" content="杀戮尖塔之旅">
+<meta property="og:description" content="🌧️ 未知房间：春雨中的神秘遭遇 “你遇到了一个神秘的事件…”  今天早上，推开窗的那一刻，我看到了一场春雨——这是我今年遇到的第一个随机事件。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-03-20T01:15:00.000Z">
+<meta property="article:modified_time" content="2026-03-24T08:03:46.103Z">
+<meta property="article:author" content="爬塔者">
+<meta property="article:tag" content="感悟">
+<meta property="article:tag" content="春雨">
+<meta property="article:tag" content="随机事件">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://yourname.github.io/2026/03/20/%E6%98%A5%E5%A4%A9%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%A8/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<!-- 杀戮尖塔主题自定义 head -->
+
+<!-- 引入像素风格字体 -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<!-- 自定义样式 -->
+<style>
+/* 杀戮尖塔能量球动画 */
+.sts-energy-orb {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #7dd3fc, #0ea5e9, #0369a1);
+  box-shadow: 
+    0 0 20px rgba(14, 165, 233, 0.6),
+    inset -5px -5px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 9999;
+  animation: energyPulse 2s ease-in-out infinite;
+}
+
+@keyframes energyPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.6);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(14, 165, 233, 0.8), 0 0 50px rgba(14, 165, 233, 0.4);
+  }
+}
+
+/* 红色能量球 */
+.sts-energy-orb-red {
+  background: radial-gradient(circle at 30% 30%, #fca5a5, #dc2626, #991b1b);
+  box-shadow: 
+    0 0 20px rgba(220, 38, 38, 0.6),
+    inset -5px -5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sts-energy-orb-red {
+  animation: energyPulseRed 2s ease-in-out infinite;
+}
+
+@keyframes energyPulseRed {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.6);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(220, 38, 38, 0.8), 0 0 50px rgba(220, 38, 38, 0.4);
+  }
+}
+
+/* 绿色能量球 */
+.sts-energy-orb-green {
+  background: radial-gradient(circle at 30% 30%, #86efac, #22c55e, #15803d);
+  box-shadow: 
+    0 0 20px rgba(34, 197, 94, 0.6),
+    inset -5px -5px 10px rgba(0, 0, 0, 0.3);
+  animation: energyPulseGreen 2s ease-in-out infinite;
+}
+
+@keyframes energyPulseGreen {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.6);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(34, 197, 94, 0.8), 0 0 50px rgba(34, 197, 94, 0.4);
+  }
+}
+
+/* 能量球位置 */
+.orb-1 { top: 100px; right: 30px; animation-delay: 0s; }
+.orb-2 { top: 160px; right: 30px; animation-delay: 0.3s; }
+.orb-3 { top: 220px; right: 30px; animation-delay: 0.6s; }
+
+/* 漂浮符文动画 */
+.floating-rune {
+  position: fixed;
+  font-size: 24px;
+  color: rgba(201, 162, 39, 0.3);
+  pointer-events: none;
+  z-index: 1;
+  animation: floatRune 8s ease-in-out infinite;
+}
+
+@keyframes floatRune {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+    opacity: 0.6;
+  }
+}
+
+.rune-1 { top: 20%; left: 5%; animation-delay: 0s; }
+.rune-2 { top: 40%; right: 8%; animation-delay: 2s; }
+.rune-3 { top: 60%; left: 10%; animation-delay: 4s; }
+.rune-4 { top: 80%; right: 5%; animation-delay: 6s; }
+
+/* 卡牌翻转效果 */
+.card-flip {
+  perspective: 1000px;
+}
+
+.card-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card-flip:hover .card-flip-inner {
+  transform: rotateY(10deg);
+}
+
+/* 血条样式 */
+.sts-health-bar {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 200px;
+  height: 24px;
+  background: #1a1a2e;
+  border: 2px solid #8b7355;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 9999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.sts-health-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #dc2626 0%, #ef4444 50%, #dc2626 100%);
+  width: 80%;
+  transition: width 0.5s ease;
+  position: relative;
+}
+
+.sts-health-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(180deg, rgba(255,255,255,0.3) 0%, transparent 100%);
+}
+
+.sts-health-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+}
+
+/* 金币显示 */
+.sts-gold-display {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(26, 26, 46, 0.9);
+  border: 2px solid #c9a227;
+  border-radius: 20px;
+  padding: 8px 16px;
+  z-index: 9999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.sts-gold-icon {
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(circle at 30% 30%, #f4d03f, #c9a227);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(201, 162, 39, 0.6);
+  animation: goldShine 2s ease-in-out infinite;
+}
+
+@keyframes goldShine {
+  0%, 100% { box-shadow: 0 0 10px rgba(201, 162, 39, 0.6); }
+  50% { box-shadow: 0 0 20px rgba(201, 162, 39, 0.9), 0 0 30px rgba(201, 162, 39, 0.4); }
+}
+
+.sts-gold-text {
+  color: #c9a227;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* 楼层显示 */
+.sts-floor {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  background: rgba(26, 26, 46, 0.9);
+  border: 2px solid #4a3b69;
+  border-radius: 8px;
+  padding: 10px 20px;
+  z-index: 9999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.sts-floor-text {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.sts-floor-number {
+  color: #c9a227;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+</style>
+
+  <title>🌧️ 未知房间：春雨中的神秘遭遇 | 杀戮尖塔之旅</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">杀戮尖塔之旅</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">攀登高塔，记录冒险</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://yourname.github.io/2026/03/20/%E6%98%A5%E5%A4%A9%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="爬塔者">
+      <meta itemprop="description" content="一个以杀戮尖塔为主题的冒险博客，记录游戏中的精彩时刻与心得">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="杀戮尖塔之旅">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          🌧️ 未知房间：春雨中的神秘遭遇
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2026-03-20 09:15:00" itemprop="dateCreated datePublished" datetime="2026-03-20T09:15:00+08:00">2026-03-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2026-03-24 16:03:46" itemprop="dateModified" datetime="2026-03-24T16:03:46+08:00">2026-03-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%86%92%E9%99%A9%E6%97%A5%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">冒险日记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="🌧️-未知房间：春雨中的神秘遭遇"><a href="#🌧️-未知房间：春雨中的神秘遭遇" class="headerlink" title="🌧️ 未知房间：春雨中的神秘遭遇"></a>🌧️ 未知房间：春雨中的神秘遭遇</h1><blockquote>
+<p><em>“你遇到了一个神秘的事件…”</em></p>
+</blockquote>
+<p>今天早上，推开窗的那一刻，我看到了一场春雨——这是我今年遇到的第一个<strong>随机事件</strong>。</p>
+<span id="more"></span>
+
+<h2 id="🎲-事件触发"><a href="#🎲-事件触发" class="headerlink" title="🎲 事件触发"></a>🎲 事件触发</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">┌────────────────────────────────┐</span><br><span class="line">│      🌧️  春 雨 之 约           │</span><br><span class="line">│                                │</span><br><span class="line">│  细雨绵绵，世界变得模糊而      │</span><br><span class="line">│  神秘。你站在窗前，感受到      │</span><br><span class="line">│  一种奇特的能量波动...         │</span><br><span class="line">│                                │</span><br><span class="line">│  你会如何选择？                │</span><br><span class="line">│                                │</span><br><span class="line">│  [A] 走进雨中，接受洗礼        │</span><br><span class="line">│  [B] 煮一壶茶，静静聆听        │</span><br><span class="line">│  [C] 记录这个时刻              │</span><br><span class="line">└────────────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+<h2 id="🎯-选择-B-：静听春雨"><a href="#🎯-选择-B-：静听春雨" class="headerlink" title="🎯 选择 [B]：静听春雨"></a>🎯 选择 [B]：静听春雨</h2><blockquote>
+<p><em>你选择了安全的方式，但获得了智慧。</em></p>
+</blockquote>
+<p>雨声是最天然的白噪音，它让我的思绪变得清晰：</p>
+<h3 id="🎴-获得的卡牌"><a href="#🎴-获得的卡牌" class="headerlink" title="🎴 获得的卡牌"></a>🎴 获得的卡牌</h3><ul>
+<li><strong>平静</strong> × 2 —— 进入平静姿态</li>
+<li><strong>冥想</strong> × 1 —— 抽 3 张牌，获得 2 点格挡</li>
+</ul>
+<h3 id="🔮-获得的效果"><a href="#🔮-获得的效果" class="headerlink" title="🔮 获得的效果"></a>🔮 获得的效果</h3><ul>
+<li><code>专注</code> +3</li>
+<li><code>焦虑</code> -2</li>
+<li><code>灵感</code> +5</li>
+</ul>
+<h2 id="🌈-雨水带来的祝福"><a href="#🌈-雨水带来的祝福" class="headerlink" title="🌈 雨水带来的祝福"></a>🌈 雨水带来的祝福</h2><p>春雨过后，一切都焕然一新：</p>
+<table>
+<thead>
+<tr>
+<th align="center">变化前</th>
+<th align="center">变化后</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">😔 疲惫</td>
+<td align="center">😊 平静</td>
+</tr>
+<tr>
+<td align="center">🤯 混乱</td>
+<td align="center">🧘 专注</td>
+</tr>
+<tr>
+<td align="center">😰 焦虑</td>
+<td align="center">💪 充满信心</td>
+</tr>
+</tbody></table>
+<h2 id="💎-隐藏奖励"><a href="#💎-隐藏奖励" class="headerlink" title="💎 隐藏奖励"></a>💎 隐藏奖励</h2><p>在雨中，我意外发现了一段游戏台词：</p>
+<blockquote>
+<p><em>“每一个雨滴都是一个选择，<br>每一场春雨都是一次重生。<br>高塔的攀登者啊，<br>别忘了欣赏沿途的风景。”</em></p>
+</blockquote>
+<p>—— 神秘的声音</p>
+<h2 id="⚔️-应用到游戏中"><a href="#⚔️-应用到游戏中" class="headerlink" title="⚔️ 应用到游戏中"></a>⚔️ 应用到游戏中</h2><p>这场春雨让我想到了杀戮尖塔中的一个道理：</p>
+<p><strong>不是所有战斗都需要硬刚。</strong></p>
+<p>有时候，像观者一样进入<strong>平静姿态</strong>，积累力量，等待时机，才是最优解。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">当前姿态：平静 🧘</span><br><span class="line">效果：离开平静姿态时，获得 +2 能量</span><br></pre></td></tr></table></figure>
+
+<h2 id="🏆-事件结算"><a href="#🏆-事件结算" class="headerlink" title="🏆 事件结算"></a>🏆 事件结算</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">━━━━━━━━━━━━━━━━━━━━</span><br><span class="line">📊 事件完成统计：</span><br><span class="line">━━━━━━━━━━━━━━━━━━━━</span><br><span class="line">💰 金币：     +0</span><br><span class="line">❤️ 生命：     +5  (治愈)</span><br><span class="line">⚡ 能量：     +2</span><br><span class="line">🎴 卡牌：     平静 × 2, 冥想 × 1</span><br><span class="line">🔮 遗物：     无</span><br><span class="line">💎 祝福：     春雨的宁静</span><br><span class="line">━━━━━━━━━━━━━━━━━━━━</span><br></pre></td></tr></table></figure>
+
+<h2 id="🌟-感悟"><a href="#🌟-感悟" class="headerlink" title="🌟 感悟"></a>🌟 感悟</h2><p>生活就像杀戮尖塔，充满了随机事件。</p>
+<p>我们无法控制遇到什么，但可以选择如何应对。</p>
+<blockquote>
+<p><em>“高塔会考验每一个攀登者，<br>但真正的力量，来自于内心的平静。”</em></p>
+</blockquote>
+<hr>
+<p><em>你获得了祝福：春雨的宁静</em></p>
+<p><em>在接下来的 3 场战斗中，每场开始时获得 1 点能量。</em></p>
+<p><strong>继续前进 →</strong></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6/" rel="tag"># 随机事件</a>
+              <a href="/tags/%E6%98%A5%E9%9B%A8/" rel="tag"># 春雨</a>
+              <a href="/tags/%E6%84%9F%E6%82%9F/" rel="tag"># 感悟</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2026/03/22/%E5%91%A8%E6%9C%AB%E7%9A%84%E5%92%96%E5%95%A1%E6%97%B6%E5%85%89/" rel="next" title="☕ 营地休息：周末的咖啡时光">
+      ☕ 营地休息：周末的咖啡时光 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%F0%9F%8C%A7%EF%B8%8F-%E6%9C%AA%E7%9F%A5%E6%88%BF%E9%97%B4%EF%BC%9A%E6%98%A5%E9%9B%A8%E4%B8%AD%E7%9A%84%E7%A5%9E%E7%A7%98%E9%81%AD%E9%81%87"><span class="nav-number">1.</span> <span class="nav-text">🌧️ 未知房间：春雨中的神秘遭遇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%8E%B2-%E4%BA%8B%E4%BB%B6%E8%A7%A6%E5%8F%91"><span class="nav-number">1.1.</span> <span class="nav-text">🎲 事件触发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%8E%AF-%E9%80%89%E6%8B%A9-B-%EF%BC%9A%E9%9D%99%E5%90%AC%E6%98%A5%E9%9B%A8"><span class="nav-number">1.2.</span> <span class="nav-text">🎯 选择 [B]：静听春雨</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%8E%B4-%E8%8E%B7%E5%BE%97%E7%9A%84%E5%8D%A1%E7%89%8C"><span class="nav-number">1.2.1.</span> <span class="nav-text">🎴 获得的卡牌</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%94%AE-%E8%8E%B7%E5%BE%97%E7%9A%84%E6%95%88%E6%9E%9C"><span class="nav-number">1.2.2.</span> <span class="nav-text">🔮 获得的效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%8C%88-%E9%9B%A8%E6%B0%B4%E5%B8%A6%E6%9D%A5%E7%9A%84%E7%A5%9D%E7%A6%8F"><span class="nav-number">1.3.</span> <span class="nav-text">🌈 雨水带来的祝福</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%92%8E-%E9%9A%90%E8%97%8F%E5%A5%96%E5%8A%B1"><span class="nav-number">1.4.</span> <span class="nav-text">💎 隐藏奖励</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%9A%94%EF%B8%8F-%E5%BA%94%E7%94%A8%E5%88%B0%E6%B8%B8%E6%88%8F%E4%B8%AD"><span class="nav-number">1.5.</span> <span class="nav-text">⚔️ 应用到游戏中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%8F%86-%E4%BA%8B%E4%BB%B6%E7%BB%93%E7%AE%97"><span class="nav-number">1.6.</span> <span class="nav-text">🏆 事件结算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%8C%9F-%E6%84%9F%E6%82%9F"><span class="nav-number">1.7.</span> <span class="nav-text">🌟 感悟</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">爬塔者</p>
+  <div class="site-description" itemprop="description">一个以杀戮尖塔为主题的冒险博客，记录游戏中的精彩时刻与心得</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">爬塔者</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+<!-- 杀戮尖塔主题动画元素 -->
+
+<!-- 能量球 -->
+<div class="sts-energy-orb orb-1"></div>
+<div class="sts-energy-orb-green orb-2"></div>
+<div class="sts-energy-orb-red orb-3"></div>
+
+<!-- 漂浮符文 -->
+<div class="floating-rune rune-1">ᚠ</div>
+<div class="floating-rune rune-2">ᚢ</div>
+<div class="floating-rune rune-3">ᚦ</div>
+<div class="floating-rune rune-4">ᚨ</div>
+
+<!-- 血条 -->
+<div class="sts-health-bar">
+  <div class="sts-health-fill"></div>
+  <div class="sts-health-text">80/100</div>
+</div>
+
+<!-- 金币 -->
+<div class="sts-gold-display">
+  <div class="sts-gold-icon"></div>
+  <div class="sts-gold-text">999</div>
+</div>
+
+<!-- 楼层 -->
+<div class="sts-floor">
+  <div class="sts-floor-text">楼层</div>
+  <div class="sts-floor-number">42</div>
+</div>
+
+<!-- 鼠标跟随效果 -->
+<script>
+(function() {
+  // 创建粒子效果
+  function createParticle(x, y) {
+    const particle = document.createElement('div');
+    particle.style.cssText = `
+      position: fixed;
+      width: 6px;
+      height: 6px;
+      background: radial-gradient(circle, #c9a227 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9998;
+      left: ${x}px;
+      top: ${y}px;
+      animation: particleFade 1s ease-out forwards;
+    `;
+    document.body.appendChild(particle);
+    
+    setTimeout(() => particle.remove(), 1000);
+  }
+  
+  // 添加粒子动画
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes particleFade {
+      0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(${Math.random() * 40 - 20}px, ${Math.random() * 40 - 20}px) scale(0);
+        opacity: 0;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+  
+  // 鼠标移动事件
+  let lastTime = 0;
+  document.addEventListener('mousemove', function(e) {
+    const now = Date.now();
+    if (now - lastTime > 50) { // 限制粒子生成频率
+      createParticle(e.clientX, e.clientY);
+      lastTime = now;
+    }
+  });
+  
+  // 点击爆炸效果
+  document.addEventListener('click', function(e) {
+    for (let i = 0; i < 8; i++) {
+      setTimeout(() => {
+        createParticle(
+          e.clientX + Math.random() * 30 - 15,
+          e.clientY + Math.random() * 30 - 15
+        );
+      }, i * 30);
+    }
+  });
+  
+  // 卡牌悬停音效提示（视觉反馈）
+  document.querySelectorAll('.post-block').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+      this.style.transform = 'translateY(-5px) scale(1.01)';
+    });
+    card.addEventListener('mouseleave', function() {
+      this.style.transform = 'translateY(0) scale(1)';
+    });
+  });
+  
+  // 随机闪烁效果
+  setInterval(() => {
+    const orbs = document.querySelectorAll('.sts-energy-orb, .sts-energy-orb-green, .sts-energy-orb-red');
+    const randomOrb = orbs[Math.floor(Math.random() * orbs.length)];
+    if (randomOrb) {
+      randomOrb.style.filter = 'brightness(1.5)';
+      setTimeout(() => {
+        randomOrb.style.filter = 'brightness(1)';
+      }, 200);
+    }
+  }, 2000);
+})();
+</script>
+
+</body>
+</html>
